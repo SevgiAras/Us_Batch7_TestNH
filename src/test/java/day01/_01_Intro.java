@@ -22,6 +22,7 @@ public class _01_Intro {
     @Test(priority = 3)//third test to be run
     public void checkOut(){
         System.out.println("CheckOut test is successful");
+        //
 
     }
 }

@@ -38,6 +38,7 @@ public class _02_Annotations {
 @BeforeMethod
 public void beforeMethod2(){
     System.out.println("Before Method 2 is working ");
+    //
 
 }
 }

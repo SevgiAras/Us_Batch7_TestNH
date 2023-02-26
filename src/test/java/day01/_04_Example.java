@@ -27,7 +27,7 @@ public class _04_Example {
         WebElement loginButton =driver.findElement(By.xpath("//input[@type='submit']"));
         loginButton.click();
         WebElement myAccountHeader  =driver.findElement(By.xpath("(//div[@id='content']//h2)[1]"));
-
+//
 //     if (myAccountHeader.isDisplayed()){
 //         System.out.println(myAccountHeader.getText().equals("my Account"));
 //     }

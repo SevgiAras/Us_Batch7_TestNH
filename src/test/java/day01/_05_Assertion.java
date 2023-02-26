@@ -71,5 +71,6 @@ public class _05_Assertion {
         String name="john";
         if (name.equals("john"))
         Assert.fail("Test fails anyways");
+        //
     }
 }
