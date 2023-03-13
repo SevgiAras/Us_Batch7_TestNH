@@ -17,23 +17,23 @@ public class _04_Example {
     */
     @Test
     void loginTest() throws InterruptedException {
-        WebDriver driver =new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("https://opencart.abstracta.us/index.php?route=account/login");
         driver.manage().window().maximize();
-        WebElement emailButton =driver.findElement(By.xpath("//input[@name='email']"));
+        WebElement emailButton = driver.findElement(By.xpath("//input[@name='email']"));
         emailButton.sendKeys("testngusbatch@gmail.com");
         WebElement passwordButton = driver.findElement(By.xpath("//input[@name='password']"));
         passwordButton.sendKeys("usbatch1234");
-        WebElement loginButton =driver.findElement(By.xpath("//input[@type='submit']"));
+        WebElement loginButton = driver.findElement(By.xpath("//input[@type='submit']"));
         loginButton.click();
-        WebElement myAccountHeader  =driver.findElement(By.xpath("(//div[@id='content']//h2)[1]"));
+        WebElement myAccountHeader = driver.findElement(By.xpath("(//div[@id='content']//h2)[1]"));
 //
 //     if (myAccountHeader.isDisplayed()){
 //         System.out.println(myAccountHeader.getText().equals("my Account"));
 //     }
 
-   Assert.assertEquals(myAccountHeader.getText(),"My Account");
-     Thread.sleep(3000);
-     driver.quit();
+        Assert.assertEquals(myAccountHeader.getText(), "My Account");
+        Thread.sleep(3000);
+        driver.quit();
     }
 }

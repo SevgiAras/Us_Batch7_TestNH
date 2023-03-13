@@ -20,9 +20,9 @@ public class MenuHoverOver {
         driver.get("https://demoqa.com/menu ");
         driver.manage().window().maximize();
 
-         WebDriverWait wait=new  WebDriverWait(driver,Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-         Actions action=new Actions(driver);
+        Actions action = new Actions(driver);
         WebElement mainItem = driver.findElement(By.xpath("//a[text()='Main Item 2']"));
         wait.until(ExpectedConditions.visibilityOf(mainItem));
         Action hoverOverMainItem = action.moveToElement(mainItem).build();
@@ -30,7 +30,7 @@ public class MenuHoverOver {
 
         WebElement subList = driver.findElement(By.xpath("//a[contains(text(),'SUB SUB LIST')]"));
         Action hoverOverSubList = action.moveToElement(subList).build();
-       hoverOverSubList.perform();
+        hoverOverSubList.perform();
         Thread.sleep(5000);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Sub Sub Item 1')]")));
         WebElement subItem1 = driver.findElement(By.xpath("//a[contains(text(),'Sub Sub Item 1')]"));
@@ -40,21 +40,13 @@ public class MenuHoverOver {
         //wait.until(ExpectedConditions.visibilityOf(subItem1));
         subItem1.click();
         Thread.sleep(5000);
-       Assert.assertEquals(subItem1.getText(),"Sub Sub Item 1");
+        Assert.assertEquals(subItem1.getText(), "Sub Sub Item 1");
         Thread.sleep(2000);
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl.contains("Sub Sub Item 1"));
 
 
-
-
-
-
-
-
-
-
     }
-    }
+}
 

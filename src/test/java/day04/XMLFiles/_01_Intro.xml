@@ -3,8 +3,8 @@
 <suite name="All Test Suite">
     <test name="First XML intro Test">
 
-       <classes>
-           <class name="day04._03_XMLIntro"></class>
-       </classes>
+        <classes>
+            <class name="day04._03_XMLIntro"></class>
+        </classes>
     </test>
 </suite>

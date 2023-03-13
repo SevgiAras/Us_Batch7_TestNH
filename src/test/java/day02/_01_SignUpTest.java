@@ -4,24 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-
 public class _01_SignUpTest {
     /*
-    * Go to "https ://opencart.abstracta.us/index.php?route=account/login"
-    * click on my account
-    * click on Register
-    * Fill int hr form with valid information
-    * Accept the agreement
-    * Click on the continue
-    * Click on continue button
-    * verify that you are
-    */
+     * Go to "https ://opencart.abstracta.us/index.php?route=account/login"
+     * click on my account
+     * click on Register
+     * Fill int hr form with valid information
+     * Accept the agreement
+     * Click on the continue
+     * Click on continue button
+     * verify that you are
+     */
 
     @Test
     void signUp() throws InterruptedException {

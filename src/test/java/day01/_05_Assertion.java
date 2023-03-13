@@ -66,11 +66,12 @@ public class _05_Assertion {
     void test8() {
         Assert.fail("Test fails anyways");
     }
+
     @Test
     void test9() {
-        String name="john";
+        String name = "john";
         if (name.equals("john"))
-        Assert.fail("Test fails anyways");
+            Assert.fail("Test fails anyways");
         //
     }
 }

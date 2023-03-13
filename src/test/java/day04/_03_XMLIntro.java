@@ -49,25 +49,29 @@ public class _03_XMLIntro {
     void test2() {
         System.out.println("Test 2 run ");
     }
+
     @AfterMethod
-    void afterMethodMethod(){
+    void afterMethodMethod() {
         System.out.println("after method runs");
     }
+
     @AfterClass
-    void afterClassMethod(){
+    void afterClassMethod() {
         System.out.println("after Class runs");
     }
+
     @AfterGroups
-    void afterGroups(){
+    void afterGroups() {
         System.out.println("after groups runs");
     }
 
     @AfterTest
-    void afterTestMethod(){
+    void afterTestMethod() {
         System.out.println("after test runs");
     }
+
     @AfterSuite
-    void afterSuitMethod(){
+    void afterSuitMethod() {
         System.out.println("after Suit runs");
 
     }

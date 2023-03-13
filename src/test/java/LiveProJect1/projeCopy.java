@@ -24,30 +24,30 @@ public class projeCopy {
 
         Actions action = new Actions(driver);
         WebElement mainItem = driver.findElement(By.xpath("//a[text()='Main Item 2']"));
-        String beforeMainBoxColor=mainItem.getCssValue("background-color");
+        String beforeMainBoxColor = mainItem.getCssValue("background-color");
         System.out.println(beforeMainBoxColor);
         wait.until(ExpectedConditions.visibilityOf(mainItem));
         Action hoverOverMainItem = action.moveToElement(mainItem).build();
         hoverOverMainItem.perform();
-        String afterMainBoxColor=mainItem.getCssValue(mainItem.getCssValue("background-color"));
+        String afterMainBoxColor = mainItem.getCssValue(mainItem.getCssValue("background-color"));
         System.out.println(afterMainBoxColor);
 
         WebElement subList = driver.findElement(By.xpath("//a[contains(text(),'SUB SUB LIST')]"));
-        String beforeSubListBoxColor=subList.getCssValue("background-color");
+        String beforeSubListBoxColor = subList.getCssValue("background-color");
         System.out.println(beforeSubListBoxColor);
         Action hoverOverSubList = action.moveToElement(subList).build();
         hoverOverSubList.perform();
-        String afterSubLIstBoxColor=subList.getCssValue(mainItem.getCssValue("background-color"));
+        String afterSubLIstBoxColor = subList.getCssValue(mainItem.getCssValue("background-color"));
         System.out.println(afterSubLIstBoxColor);
         Thread.sleep(5000);
 
 
         WebElement subItem1 = driver.findElement(By.xpath("//a[contains(text(),'Sub Sub Item 1')]"));
-        String beforeSubItemBoxColor=subItem1.getCssValue("background-color");
+        String beforeSubItemBoxColor = subItem1.getCssValue("background-color");
         System.out.println(beforeSubItemBoxColor);
         Action hoverOverSubItem1 = action.moveToElement(subItem1).build();
         action.click().build().perform();
-        String afterSubItemBoxColor=subItem1.getCssValue(mainItem.getCssValue("background-color"));
+        String afterSubItemBoxColor = subItem1.getCssValue(mainItem.getCssValue("background-color"));
         System.out.println(afterSubItemBoxColor);
         Thread.sleep(3000);
         subItem1.click();
@@ -57,9 +57,6 @@ public class projeCopy {
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl.contains("Sub Sub Item 1"));
-
-
-
 
 
     }

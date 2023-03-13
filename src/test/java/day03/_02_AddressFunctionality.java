@@ -99,8 +99,9 @@ public class _02_AddressFunctionality extends DriverClass {
 
         Assert.assertTrue(successMessage.getText().contains("successfully"));
     }
-    @Test(dependsOnMethods= "addAddress")
-    void  deleteAddress(){
+
+    @Test(dependsOnMethods = "addAddress")
+    void deleteAddress() {
         WebElement deleteButton = driver.findElement(By.xpath("(//a[text()='Edit'])[2]"));
         deleteButton.click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));

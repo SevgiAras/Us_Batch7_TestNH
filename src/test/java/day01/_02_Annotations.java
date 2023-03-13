@@ -11,34 +11,40 @@ public class _02_Annotations {
     //AfterClass--->This code will br run after the class
 
     @BeforeMethod
- public void beforeMethod(){
+    public void beforeMethod() {
         System.out.println("Before Method is working");
     }
+
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod() {
         System.out.println("After method id working");
     }
+
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass() {
         System.out.println("Before Class is working");
     }
+
     @AfterClass
-    public void afterClass(){
+    public void afterClass() {
         System.out.println("After class is working");
     }
+
     @Test
-    void test1(){
+    void test1() {
         System.out.println("Test 1 is successful");
 
     }
-    @Test
-    void  test2(){
-        System.out.println("Test 2 is successful");
-}
-@BeforeMethod
-public void beforeMethod2(){
-    System.out.println("Before Method 2 is working ");
-    //
 
-}
+    @Test
+    void test2() {
+        System.out.println("Test 2 is successful");
+    }
+
+    @BeforeMethod
+    public void beforeMethod2() {
+        System.out.println("Before Method 2 is working ");
+        //
+
+    }
 }
