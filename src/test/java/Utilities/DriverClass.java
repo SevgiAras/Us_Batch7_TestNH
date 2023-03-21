@@ -30,20 +30,20 @@ import java.time.Duration;
             driver.manage().window().maximize();
 
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-            login();
+           // login();
         }
 
-        void login() {
-            driver.get("https://opencart.abstracta.us/index.php?route=account/login");
-            WebElement emailInput = driver.findElement(By.id("input-email"));
-            emailInput.sendKeys("testngusbatch@gmail.com");
-
-            WebElement password = driver.findElement(By.id("input-password"));
-            password.sendKeys("usbatch1234");
-
-            WebElement loginButton = driver.findElement(By.cssSelector("input[type='submit']"));
-            loginButton.click();
-        }
+//        void login() {
+//           // driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+//            WebElement emailInput = driver.findElement(By.id("input-email"));
+//            emailInput.sendKeys("testngusbatch@gmail.com");
+//
+//            WebElement password = driver.findElement(By.id("input-password"));
+//            password.sendKeys("usbatch1234");
+//
+//            WebElement loginButton = driver.findElement(By.cssSelector("input[type='submit']"));
+//            loginButton.click();
+//        }
 
         @AfterClass(alwaysRun = true)
         public void finishSettings(){
@@ -52,7 +52,7 @@ import java.time.Duration;
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            driver.quit();
+            //driver.quit();
         }
 
 
